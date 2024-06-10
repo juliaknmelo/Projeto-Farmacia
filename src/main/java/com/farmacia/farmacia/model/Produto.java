@@ -21,8 +21,8 @@ public class Produto {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	
-	@NotBlank(message = "O atributo título é obrigatório!")
-	@Size(min = 5, max = 500, message = "O atibuto título deve conter no mínimo 10 e no máximo 100 caracteres")
+	@NotBlank(message = "O atributo nome é obrigatório!")
+	@Size(min = 5, max = 500, message = "O atibuto nome deve conter no mínimo 5 e no máximo 500 caracteres")
 	private String nome;
 
 	@NotNull(message= "O atributo preco é obrigatório")
@@ -30,11 +30,11 @@ public class Produto {
 	private Float preco;
 	
 	@NotBlank(message = "O atributo descrição é obrigatório!")
-	@Size(min = 5, max = 1000, message = "O atibuto título deve conter no mínimo 10 e no máximo 100 caracteres")
+	@Size(min = 5, max = 1000, message = "O atibuto descrição deve conter no mínimo 5 e no máximo 1000 caracteres")
 	private String descricao;
 	
 	@NotBlank(message = "O atributo marca é obrigatório!")
-	@Size(min = 5, max = 100, message = "O atibuto título deve conter no mínimo 10 e no máximo 100 caracteres")
+	@Size(min = 5, max = 100, message = "O atibuto marca deve conter no mínimo 5 e no máximo 100 caracteres")
 	private String marca;
 	
 	
